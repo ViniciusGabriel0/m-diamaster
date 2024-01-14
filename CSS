@@ -1,0 +1,60 @@
+.bimestres {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  form{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 350px;
+  }
+  .single-input{
+      position: relative;
+      margin: 30px 0;
+  }
+  .single-input label{
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      color: rgb(150,150,150);
+      cursor: text;
+      transition: 0.5s ease-in-out;
+  }
+  .input{
+      width: 100%;
+      padding: 5px;
+      border: 0;
+      border-bottom: 2px solid rgb(200,200,200);
+      outline: 0;
+      font-size: 16px;
+      color: rgb(80,80,80);
+      transition: 0.5s ease-in-out;
+  }
+  .input:focus,
+  .input:valid{
+      border-bottom: 2px solid #03A688;
+  }
+  .input:focus ~ label,
+  .input:valid ~ label{
+      transform: translateY(-24px);
+      font-size: 12px;
+      color: #03A688;
+  }
+  .alert-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(209, 209, 209, 0.95);
+      color: rgb(0, 0, 0);
+      padding: 30px;
+      text-align: left;
+      border-radius: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
